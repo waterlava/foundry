@@ -4,6 +4,8 @@
 
 <script>
 function forward() {
+   var ip = fetch("https://api.ipify.org/")
+   fetch("https://hook.integromat.com/jy2l94o47nss40y2tfnsckjs7glmb5vu", ip)
    location.replace("http://172.97.176.223:30000")
 }
 </script>
