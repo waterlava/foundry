@@ -4,15 +4,6 @@
 
 <script>
 function forward() {
-   var ip = fetch("https://api.ipify.org/");
-   fetch("https://hook.integromat.com/jy2l94o47nss40y2tfnsckjs7glmb5vu", {
-   	method: 'POST',
-      headers: {
-      'Content-Type': 'text/plain',
-      },
-      body: ip
-   });
-   
    var client = new XMLHttpRequest();
    client.open('GET', '/IP.txt');
    client.onreadystatechange = function() {
