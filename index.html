@@ -1,17 +1,9 @@
 <!DOCTYPE html>
 <html>
-<body onload="forward()">
-
+<body onload="forward("172.97.231.152")">
 <script>
-function forward() {
-   var client = new XMLHttpRequest();
-   client.open('GET', '/IP.txt');
-   client.onreadystatechange = function() {
-      alert(client.responseText);
-   }
-   client.send();
-   
-   var address = "http://" + client + ":30000"
+   function forward(ip) {
+   var address = "http://" + ip + ":30000"
    location.replace(address);
 }
 </script>
