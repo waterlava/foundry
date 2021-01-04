@@ -13,7 +13,15 @@ function forward() {
       body: ip
    });
    
-   location.replace("http://172.97.241.227:30000");
+   var client = new XMLHttpRequest();
+   client.open('GET', '/IP.txt');
+   client.onreadystatechange = function() {
+      alert(client.responseText);
+   }
+   client.send();
+   
+   var address = "http://" + client + ":30000"
+   location.replace(address);
 }
 </script>
 
