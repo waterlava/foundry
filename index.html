@@ -1,21 +1,11 @@
 <!DOCTYPE html>
 <html>
-<body onload="forward()">
-
+<body onload="forward("172.97.231.152")">
 <script>
-function forward() {
-   var ip = fetch("https://api.ipify.org/");
-   fetch("https://hook.integromat.com/jy2l94o47nss40y2tfnsckjs7glmb5vu", {
-   	method: 'POST',
-      headers: {
-      'Content-Type': 'text/plain',
-      },
-      body: ip
-   });
-   
-   location.replace("http://172.97.176.223:30000");
+   function forward(ip) {
+   var address = "http://" + ip + ":30000"
+   location.replace(address);
 }
 </script>
-
 </body>
 </html> 
