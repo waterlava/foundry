@@ -1,4 +1,5 @@
 ﻿# foundry.cf
-Forwards to my foundry VTT web server (*publicip*:30000) if accessed remotely while it's on.
+## Convert to webp
+A powershell script that can convert one or multiple files quickly into webp format.
 
 
